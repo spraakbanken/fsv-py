@@ -18,3 +18,8 @@ build-backend = "uv_build"
 
 [tool.uv.build-backend]
 module-name = "fsv"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.8",
+]
