@@ -12,17 +12,20 @@ dependencies = []
 [project.scripts]
 fsv = "fsv:main"
 
+[dependency-groups]
+dev = [
+  "pytest>=9.1.1",
+  "pytest-coverage>=0.0",
+  "ruff>=0.16.8",
+  "ty>=0.0.82",
+]
+
 [build-system]
 requires = ["uv_build>=0.12.19,<0.13.0"]
 build-backend = "uv_build"
 
+[tool.uv]
+exclude-newer = "P7D"
+
 [tool.uv.build-backend]
 module-name = "fsv"
-
-[dependency-groups]
-dev = [
-    "pytest>=9.1.1",
-    "pytest-coverage>=0.0",
-    "ruff>=0.16.8",
-    "ty>=0.0.82",
-]
