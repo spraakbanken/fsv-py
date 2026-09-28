@@ -22,6 +22,7 @@ module-name = "fsv"
 [dependency-groups]
 dev = [
     "pytest>=9.1.1",
+    "pytest-coverage>=0.0",
     "ruff>=0.16.8",
     "ty>=0.0.82",
 ]
