@@ -102,8 +102,7 @@ jobs:
       - run: rm -r src
       - run: pip install typing-extensions
       - run: pip install -r tests/requirements-testing.lock
-      - run:
-          pip install <INSERT PROJECT NAME> --no-index --no-deps --find-links dist
+      - run: pip install fsv --no-index --no-deps --find-links dist
           --force-reinstall
       - run: pytest
 
